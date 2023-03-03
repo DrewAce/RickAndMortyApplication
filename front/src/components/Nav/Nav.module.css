@@ -1,0 +1,163 @@
+.navbar {
+    padding: 1em;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.1)
+    );
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.buttonMenu {
+    display:none;
+}
+
+.imageResponsive {
+    display: none;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    padding-right: 23px;
+    display: flex;
+    justify-content: right;
+}
+
+.botones { 
+    color: white;
+    text-shadow: 0.1em 0.1em 0.3em #000000;
+    margin-left: 5px;
+    width: 6.5em;
+    height: 2.3em;
+    font-weight:bolder;
+    background-color: rgb(36, 114, 167);
+    font-family: "rickandmorty", "Courier New",monospace;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border-color: rgb(25, 80, 117); 
+}
+
+.botones:hover {
+    border: 2px solid rgb(36, 114, 167);
+    color: rgb(36, 114, 167);
+    background-color: #17181c;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.imagen {
+    width: 200px;
+    animation: animacion infinite linear 1900ms
+}
+
+
+@keyframes animacion {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.09);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logout {
+    width: 22px;
+}
+
+@media (max-width: 640px) {
+
+    .container{
+        display: flex;
+        margin-right: 0;
+        width: 100%;
+        flex-direction: column-reverse;  
+        justify-content:center;
+    }   
+
+    .containerMenu {
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        height: 3.6em;
+        background: linear-gradient(
+            135deg,
+            rgba(255,255,255,0.1),
+            rgba(255,255,255,0.1)
+        );
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0px 0px 21px 0px rgba(0,0,0,1);
+        justify-content: space-between;
+    }
+
+    .navbarvisible {
+        padding-bottom: 0.1px;
+        display: flex;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(
+            135deg,
+            rgba(255,255,255,0.1),
+            rgba(255,255,255,0.1)
+        );
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        transition: 0.2s;
+       
+        justify-content:center;
+        flex-direction: row;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .navbarhidden {
+        display: none;
+    }
+
+    .botones {
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+        letter-spacing: 4px;
+    }
+
+    .navbarvisible .imagen {
+        display: none;
+    }
+
+    .navbarvisible ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 5px;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .buttonMenu {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .imageResponsive {
+        display: block;
+        width: 130px;
+        padding:4px;
+        margin-left: 5px;
+        animation: animacion infinite linear 1900ms
+    }
+}

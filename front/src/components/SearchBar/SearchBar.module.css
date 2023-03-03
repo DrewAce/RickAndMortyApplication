@@ -1,0 +1,73 @@
+
+.input {
+    text-align: center;
+    background-color:rgb(36, 114, 167);
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.1)
+    );
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    border-radius: 10px;
+    width: 10em;
+    height: 2.3em;
+    font-size: "Courier New",monospace;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.3em #000000;
+    margin-bottom: 0;
+}
+
+.input:hover{
+    border: 2px solid  rgb(25, 80, 117);
+    color: rgb(36, 114, 167);
+    background-color: #17181c;
+    
+}
+
+.button {    
+    color: white;
+    text-shadow: 0.1em 0.1em 0.3em #000000;
+    margin-left: 5px;
+    width: 6.5em;
+    height: 2.3em;
+    font-weight:bolder;
+    background-color: rgb(36, 114, 167);
+    font-family: "rickandmorty","Courier New",monospace;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border-color: rgb(25, 80, 117);
+}
+
+.button:hover{
+    border: 2px solid  rgb(25, 80, 117);
+    color: rgb(36, 114, 167);
+    background-color: #17181c;
+    
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.input::placeholder{
+    font-family: "rickandmorty";
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 640px) {
+
+    .button {
+        margin-top: 5px;
+        width: 145px;
+        height: 40px;
+        padding: 0;
+        margin: 1;
+        letter-spacing: 4px;
+    }
+
+    .input {
+        margin-left: 4px;
+        width: 145px;
+        height: 40px;
+    }
+}
