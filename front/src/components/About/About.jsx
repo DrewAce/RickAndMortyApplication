@@ -8,7 +8,7 @@ export default function About(){
         <div className={style.contenedor}> 
             <div className={style.posicion}>
                 <div className={style.info}>
-                    <p className={style.about}>Lorem Ipsum </p>  
+                    <p className={style.about}>FullStack Developer & software engineering student   </p>  
                     <br /><br />
                     <div className={style.containerRedes}>
                         <a href='https://github.com/DrewAce' target='__blank'><button className={style.boton}><img src={imgGit} className={style.img}></img></button></a>   
@@ -17,7 +17,7 @@ export default function About(){
                     </div>
                 </div>                 
                 <div className={style.title}>
-                    <h1 className={style.name}>Hecho por <b className={style.b}>Juan Andrés</b></h1>     
+                    <h1 className={style.name}>Juan Andrés<b className={style.b}> Carmona León</b></h1>     
                 </div>           
             </div>
         </div>

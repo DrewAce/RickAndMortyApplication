@@ -1,8 +1,10 @@
+
 .contenedor {
     padding: 40px;
     display: flex;
     justify-content: center;
 }
+
 
 .posicion {
     margin: 0;
@@ -17,7 +19,7 @@
         135deg,
         rgba(255,255,255,0.1),
         rgba(255,255,255,0.1)
-    );
+        );
     backdrop-filter: blur(21px);
     -webkit-backdrop-filter: blur(21px);
     border: 1px solid rgba(255,255,255,0.1);
@@ -40,10 +42,10 @@
 }
 
 .name {
-    letter-spacing: 2px;
+    letter-spacing: px;
     color: rgb(253, 244, 244);
     display: block;
-    font-family:Luminary, Haettenschweiler, 'Courier New', fantasy;
+    font-family:'Aubrey', monospace;
     font-size: 55px;
     margin: 0;
     white-space: nowrap;
@@ -51,17 +53,19 @@
     width: 25ch;
     text-shadow: 5px 5px 5px #000000;
 
-    animation: typing 3s steps(25), blink .5s infinite step-end alternate;
+    animation: handwriting 2s steps(30) forwards;
     overflow: hidden;
 }
 
-@keyframes typing {
-    from { width: 0;}
-}
+@keyframes handwriting {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
 
-@keyframes blink {
+/* @keyframes blink {
     50% {border-color: transparent;}
-}
+} */
 
 .about {
     letter-spacing: 2px;
@@ -104,8 +108,10 @@
 
 }
 
-@media (max-width: 640px) { 
 
+
+@media (max-width: 640px) { 
+    
     .contenedor{
         margin-top: 20px;
          padding: 0;
@@ -122,15 +128,16 @@
         width: 100%;
         display: flex;
     }
-
+    
     .name {
         font-size: 30px;
         white-space:break-spaces;
         animation: none;
         border-right: 0;
     }
-
+    
 
 }
+
 
 

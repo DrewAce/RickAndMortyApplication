@@ -8,7 +8,7 @@ const Landing = () => {
         <div className={style.content}>
          <img className={style.logo} src={Logo} alt="" />
 
-      <NavLink to='/form' > <button className={style.buttonLogin}>LOGIN</button></NavLink>
+      <NavLink to='/form' > <button className={style.buttonLogin}>GO TO LOGIN</button></NavLink>
     </div>
     </div>
   )

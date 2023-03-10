@@ -28,7 +28,7 @@
   border: none;
   color: white;
   background-color: rgb(36, 114, 167);
-  font-family: "rickandmorty", "Courier New",monospace;
+  font-family:"Courier New",monospace;
 }
 
 .buttonLogin:hover {

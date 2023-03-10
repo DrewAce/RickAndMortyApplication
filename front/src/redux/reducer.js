@@ -1,8 +1,9 @@
-import { ADD_FAVORITE, ALL_CHARACTERS, DELETE_FAVORITE, FILTER, ORDER } from "./actions"
+import { ADD_FAVORITE, ALL_CHARACTERS, DELETE_FAVORITE, FILTER, ORDER, GET_FAVORITES } from "./actions"
 
 const initialState = {
     myFavorites: [],
     allCharacters: [],
+    errors: {}
 }
 
 const reducer = (state=initialState, action) => {
@@ -10,12 +11,14 @@ const reducer = (state=initialState, action) => {
         case ADD_FAVORITE: 
         return {
             ...state,
-            myFavorites: [...state.myFavorites, action.payload],
-            allCharacters: [...state.myFavorites, action.payload]
+            myFavorites:action.payload,
+            allCharacters:action.payload,
+            errors:{},
         }
         case DELETE_FAVORITE:
         return {
-            myFavorites: state.myFavorites.filter(character => character.id !== action.payload)
+            myFavorites: action.payload,
+            errors:{},
         }
         case FILTER:
         const { allCharacters } = state
@@ -41,6 +44,18 @@ const reducer = (state=initialState, action) => {
                 ...state,
                 myFavorites: state.allCharacters.length !== 0 && state.allCharacters
             }
+        case "ERROR":
+            return{
+                ...state,
+                errors: action.payload,
+        }    
+        case GET_FAVORITES:
+                return{
+              ...state,
+              myFavorites: action.payload,
+              errors:{},
+            }
+
         default: return {...state}
     }
 }

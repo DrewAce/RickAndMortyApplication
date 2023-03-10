@@ -32,7 +32,7 @@ export default function NavBar(props){
                     location.pathname !== '/about' && location.pathname !== '/favorites' && !location.pathname.includes('/detail') &&<SearchBar onSearch={props.onSearch} />                    
                 }
                 {
-                   location.pathname !== '/favorites' && <NavLink to='/favorites'><button className={style.botones}>Favorites</button></NavLink>  
+                   location.pathname !== '/favorites' && <NavLink to='/favorites'><button className={style.botones}>Favorite</button></NavLink>  
                 }
                               
                 <NavLink  to='/home'><button className={style.botones}>Home</button></NavLink>

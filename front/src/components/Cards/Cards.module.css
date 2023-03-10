@@ -32,9 +32,9 @@
 .cards:hover{
     transform: scale(1.05);
    
-    -webkit-box-shadow: 0px 0px 21px 0px rgb(59, 185, 116);
-    -moz-box-shadow: 0px 0px 21px 0px rgb(59, 185, 116);
-    box-shadow: 0px 0px 21px 0px rgb(59, 185, 116);
+    -webkit-box-shadow: 0px 0px 21px 0px rgb(36, 114, 167);;
+    -moz-box-shadow: 0px 0px 21px 0px rgb(36, 114, 167);;
+    box-shadow: 0px 0px 21px 0px rgb(36, 114, 167);;
      transition: 0.1s ease-in;
 }
 
@@ -62,7 +62,7 @@
     text-align: center;
     font-family: "rickandmorty", "Courier New",monospace;
     font-size: 1.15em;
-    color: rgb(59, 185, 116);
+    color: rgb(57, 163, 235);;
     text-shadow: 0.1em 0.1em 0.3em #000000;
 }
 
@@ -79,16 +79,16 @@
     font-weight:bolder;
     width:65px;
     height: 20px;
-    background-color: rgb(59, 185, 116);
+    background-color: rgb(36, 114, 167);;
     font-family: "Courier New",monospace;
     border-radius: 10px;
-    border-color: rgb(64, 138, 113);
+    border-color: rgb(36, 114, 167);
     
 }
 
 .button:hover{
-    border: 2px solid rgb(59, 185, 116);
-    color: rgb(14, 197, 136);
+    border: 2px solid rgb(36, 114, 167);;
+    color: rgb(36, 114, 167);
     background-color: #17181c;
     cursor: pointer;
     transition: 0.2s ease-in;
@@ -156,7 +156,7 @@ a {
 
     .order {
             margin-top: 50px;
-            width: 89   %;
+            width: 89%;
             
     }
     
@@ -184,6 +184,7 @@ a {
         font-size: 1.05em;
     }
 }
+
 
 .contendorFavorites {
     margin: 50px;
@@ -215,7 +216,7 @@ a {
 }
 
 .select {
-    background-color: rgb(59, 185, 116);
+    background-color: rgb(36, 114, 167);;
     width: 13em;
     padding: 10px;
     border-radius: 15px;
@@ -239,13 +240,12 @@ a {
 
 .select:focus,
 .select:hover {
-    border: 2px solid rgb(59, 185, 116);
-    color: rgb(59, 185, 116);
+    border: 2px solid rgb(36, 114, 167);;
+    color: rgb(36, 114, 167);;
     background-color: #17181c;
     cursor: pointer;
     transition: 0.2s ease-in;
 }
-
 
 
 

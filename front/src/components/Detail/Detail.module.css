@@ -9,8 +9,8 @@
     padding: 5em;
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
-    gap: 4em;
+    flex-direction: row;
+    gap: 5em;
     background: linear-gradient(
         135deg,
         rgba(255,255,255,0.1),
@@ -28,9 +28,9 @@
 .posicion:hover {
     transform: scale(1.01);
    
-    -webkit-box-shadow: 0px 0px 21px 0px rgb(59, 185, 116);
-    -moz-box-shadow: 0px 0px 21px 0px rgb(59, 185, 116);
-    box-shadow: 0px 0px 21px 0px rgb(59, 185, 116);
+    -webkit-box-shadow: 0px 0px 21px 0px rgb(36, 114, 167);
+    -moz-box-shadow: 0px 0px 21px 0px rgb(36, 114, 167);
+    box-shadow: 0px 0px 21px 0px rgb(36, 114, 167);
      transition: 0.1s ease-in;
 }
 
@@ -42,12 +42,12 @@
 
 h2 {
 
-    font-family: "Courier New",monospace;
+    font-family: "rickandmorty", "Lucida Console",serif;
     color: white;
 }
 
 b {
-    color: rgb(59, 185, 116);
+    color: rgb(46, 151, 221);
 }
 
 .info{

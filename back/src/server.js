@@ -1,25 +1,44 @@
+const express= require("express")
+const server= express()
+const PORT= 3001;
+const cors= require("cors")
+const router= require("./routes/index")
+const favsRouter= require("./routes/favsRouter")
+const { sequelize } = require("./database/index");
 
-const http = require("http");
-const getCharById =require('./controllers/getCharById')
-const getCharDetail =require('./controllers/getCharDetail')
-// const characters = require("./utils/data.js");
+server.use(cors())
+server.use(express.json())
+server.use("/rickandmorty", router)
+server.use("/favs", favsRouter)
 
-http.createServer((req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  let id= req.url.split('/').at(-1) 
 
-  if(req.url.includes("onsearch")){
-   getCharById(res,id)
-  }
+server.listen(PORT,  ()=> {
+  sequelize.sync({ force: true });
+  console.log("Server raised in port " + PORT + ", and DB SYNC");
+})
 
-  if(req.url.includes("detail")){
+
+// const http = require("http");
+// const getCharById =require('./controllers/getCharById')
+// const getCharDetail =require('./controllers/getCharDetail')
+// // const characters = require("./utils/data.js");
+
+// http.createServer((req, res) => {
+//   res.setHeader("Access-Control-Allow-Origin", "*");
+//   let id= req.url.split('/').at(-1) 
+
+//   if(req.url.includes("onsearch")){
+//    getCharById(res,id)
+//   }
+
+//   if(req.url.includes("detail")){
     
-   getCharDetail(res,id)
-  }
+//    getCharDetail(res,id)
+//   }
 
-}).listen(3001, "localhost", () => {
-  console.log("Server running at http://localhost:3001");
-});
+// }).listen(3001, "localhost", () => {
+//   console.log("Server running at http://localhost:3001");
+// });
 
 
 //Otros códigos
